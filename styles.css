@@ -658,3 +658,14 @@ text-shadow: 0 1px 0 #fff;
 	cursor: pointer;
 	}
 /* ----------------END DETAILS BAR />-----------------*/
+
+/* ----------------Column sorting-----------------*/
+.selectedColumn {
+	background-color:#BDC0CD;
+}
+
+.selectedColumn .colArrow {
+	display: inline;
+	font-size:.8em;
+	color:#333;
+}
