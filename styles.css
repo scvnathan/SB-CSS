@@ -13,6 +13,10 @@ strong {font-weight: bold;}
 a {
 	text-decoration:none;
 }
+#header a:hover {
+border-bottom: 1px dotted #439DC9;
+color:#439DC9;
+}
 /*a:link {
 	color: #BB3518;
 	border-bottom: 1px dotted #BB3518;
@@ -33,7 +37,7 @@ body {
 	position: absolute;
 	right: 20px;
 	top: 15px;
-	color:#F8F8F8;
+	color:#88888D;
 }
 #header {
 	color:#FFFFFF;
@@ -93,7 +97,7 @@ body {
 	z-index: 5;
 }
 #tabGroup .statTab:hover {
-	color: #53add9;
+	color: #3F99C5;
 	text-shadow: 0 1px 0 #444;
 }
 #tabGroup .selectedTab {
@@ -101,11 +105,11 @@ body {
 	width: 147px !important;
 	height: 35px;
 	z-index: 10;
-	color: #439dC9 !important;
+	color: #3F99C5 !important;
 	background-position: 0 0px !important;
 }
 a.statTab-selected:hover {
-	color: #439dC9;
+	color: #3F99C5;
 }
 /*--------------- END HEADER + NAVIGATION />--------*/
 
@@ -325,7 +329,7 @@ text-shadow: 0 1px 0 #fff;
 	width: 16.25%;
 	}
 	td.result_col {
-	width: 10.25%;
+	width: 8.55%;
 	}
 	td.opponent_col {
 	width: 16.25%;
@@ -380,7 +384,7 @@ text-shadow: 0 1px 0 #fff;
 	-moz-user-select: none;
 	position: relative;
 	text-align: center;
-	padding-top: 4px;
+	padding-top: 7px;
 	z-index: 10;
 }
 	.dropdown:hover {
@@ -403,8 +407,6 @@ text-shadow: 0 1px 0 #fff;
 		height: 24px;
 		padding-top:10px;
 		
-/* 		font-weight: bold; */
-/* 		text-shadow: 0 1px 0 #c1c1c1; */
 	}
 		#sidebarInner #bossAttributes .dropdown_active {
 		background-position: 0 -36px;
@@ -413,11 +415,6 @@ text-shadow: 0 1px 0 #fff;
 		}
 		#bossAttributes .dropdown_holder {
 			border: 3px solid #77787a;			
-		}
-		#bossAttributes span {}
-		.dropdown span.team-text {
-/* 			position: relative; */
-/* 			padding-left: 28px; */
 		}
 		.dropdown .sm-logo {
 			position: absolute;
