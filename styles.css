@@ -13,7 +13,7 @@ strong {font-weight: bold;}
 a {
 	text-decoration:none;
 }
-#header a:hover {
+#contact a:hover {
 border-bottom: 1px dotted #439DC9;
 color:#439DC9;
 }
