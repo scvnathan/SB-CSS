@@ -585,7 +585,7 @@ text-shadow: 0 1px 0 #fff;
 	tr .sm-logo {
 		left:3%;
 		position:relative;
-		top:5px;	
+		top:7px;	
 	}
 	.opponent_col .sm-logo {
 		float:right;
@@ -597,6 +597,7 @@ text-shadow: 0 1px 0 #fff;
 .sm-sprite-ari {background-position: 0px   -0px; width: 25px; height: 25px;}
 .sm-sprite-atl {background-position: 0px  -28px; width: 25px; height: 25px;}
 .sm-sprite-bal {background-position: 0px  -54px; width: 25px; height: 25px;}
+.sm-sprite-blank {background-position:0 -80px;height:25px;margin-left:3px;width:25px;}
 .sm-sprite-buf {background-position: 0px -105px; width: 25px; height: 25px;}
 .sm-sprite-car {background-position: 0px -135px; width: 25px; height: 25px;}
 .sm-sprite-chi {background-position: 0px -165px; width: 25px; height: 25px;}
