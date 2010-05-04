@@ -1,0 +1,43 @@
+html {
+	overflow:auto;
+}
+#contentInner {
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+td.team_col .sm-logo {
+	left:3%;
+	position:absolute;
+	top:-5px;	
+}
+
+.team_col .teamText {
+	margin:0 auto;
+	padding-right:2%;
+	position:relative;
+	text-align:right;
+	top:0px;
+}
+#sidebar {
+overflow-y: auto;
+}
+#controlBar .dropdown_holder {
+margin-left: 0px;
+width:150px;
+}
+/*
+In anticipation for blue dropdowns...
+#controlBar .dropdown_holder {
+margin-left: 0px;
+}
+
+For fixed headers
+#content {
+top:139px
+}
+#resultTable {
+top:-23px;
+}
+
+*/

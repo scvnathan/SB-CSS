@@ -47,7 +47,7 @@ body {
 	width:100%;
 	z-index:5;
 	background-color: #2d2d2d;
-	min-width: 1050px;
+	min-width: 1024px;
 }
 #header .logo {
 	letter-spacing:-0.04em;
@@ -109,7 +109,8 @@ body {
 	width: 147px !important;
 	height: 35px;
 	z-index: 10;
-	color: #3F99C5 !important;
+	opacity:0.98; /* temporary fix color fix */
+/* 	color: #3F99C5 !important; */
 	background-position: 0 0px !important;
 }
 a.statTab-selected:hover {
@@ -131,7 +132,7 @@ background-color: #ccc;
 text-shadow: 0 1px 0 #fff;
 background: #BFBFBF url(../images/controlBar.png) repeat-x;
 border-bottom:1px solid #888;
-min-width: 1050px;
+min-width: 1024px;
 z-index: 10;
 }
 	.madlib {
@@ -159,6 +160,21 @@ z-index: 10;
 		right: 20px;
 		position: relative;
 	}
+	#csvButton {
+	background: url(../images/csvButtons.png) no-repeat;
+	width: 62px;
+	height: 25px;
+	float: right;
+	right:45px;
+	position: absolute;
+	top:20px;
+	}
+		#csvButton:active {
+		background: url(../images/csvButtons.png) no-repeat 0px -25px;
+		}
+		#csvButton:hover {
+		cursor: pointer;
+		}
 /*--------------- END CONTROL BAR />--------*/
 
 /*--------------- SIDE BAR --------*/
@@ -170,10 +186,9 @@ top:116px;
 background:none repeat scroll 0 0 #ECEFF3;
 border-right:1px solid #999999;
 bottom:0;
-max-width:290px;
 overflow-x:hidden;
 overflow-y:auto;
-min-width:260px;
+width:260px;
 z-index:4;
 text-shadow: 0 1px 0 #fff;
 }
@@ -205,7 +220,8 @@ text-shadow: 0 1px 0 #fff;
 		padding-bottom: 5px;
 	}
 	.inputGroup {
-	padding-left: 15px;
+	width:220px;
+	margin: 0 auto;
 	}
 		.box {
 			margin-right:5px;
@@ -230,80 +246,94 @@ text-shadow: 0 1px 0 #fff;
 	#content {
 	background-color:#fafafa;
 	bottom:0;
-	min-width:1060px !important; /* subtract width of sidebar from this for real width*/
+	min-width:1024px !important; /* subtract width of sidebar from this for real width*/
 	overflow:auto;
 	width: 100%;
 	z-index:4;
 	}
+	
+		#tableHeaders {
+		width:100%;
+		min-width: 1024px;
+		background-color: #D9DCE0;
+		height: 20px;
+		}
+			#tableHeadersInner {
+			position:absolute;
+			min-width: 1024px;
+			width: 100%;
+			background-color: #D9DCE0;
+			}
+			#resultTableHeaders {
+			width: 100%;
+			background-color: #D9DCE0;
+			border-left:261px solid #333;
+			min-width:1060px;
+			}
+				.scrollBarCover {
+				border-right: 15px solid #D9DCE0;
+				}
+				#resultTableHeaders th {
+				overflow: hidden;
+				border-bottom: 1px solid #aaa;
+				font-size: 1.2em;
+				height: 20px;
+				padding: 0 1px;
+				} 	
+
 		#contentInner,#headers {
 		height:100%;
 		position:absolute;
 		overflow-x: hidden; /* god bless this attribute */
 		width:100%;
 		}
-		#tableHeaders {
-		min-width: 1050px !important;
-		}
 		#contentInner {
-		min-width: 1060px;
+		min-width: 1024px;
 		}
-		.row {
-		padding:12px 0;
-		position: relative;
-		width: 100%;
-		padding-left: 262px;
-		border-bottom: 1px solid #bbb;
-		}
-		#resultsTable th {
-			position: fixed !important;
-			top:0 !important;
-		}
-		#resultsTable table {
 
+		#tableHeaders {
+		min-width: 1024px !important;
 		}
-		table {
+		#content table {
 		font-size: 1.2em;
 		border-left:261px solid #FAFAFA;
 		width: 100%;
-/* 		min-width: 600px; */
-/* 		max-width: 100%; */
 		text-shadow: 0 1px 0 #fff;
 		text-align: center;
 		}
-		th {
-		padding: 3px;
+		#content th {
+		height: 20px;
 		border-right:1px solid #aaa;
 		background-color: #D9DCE0;
-		
-		font-size: 1.3em;
 		text-align: center;
 		border-bottom: 1px solid #aaa;
 		}
 		#contentInner td {
-			padding: 1px;
-			font-size: 1.2em;
+			padding: 0px 1px;
+			font-size: 1em;
 			border-bottom: 1px solid #ddd;
 			text-align: center;
 		}
-			td .logoText {
+			#content td .logoText {
 				left:-20px;
 				top:.2em;
 				position:absolute;
 				font-weight: bold;
-				font-size: 1.3em;
 			}
-			td .specialText {
+			#content td .specialText {
 				font-weight: bold;
 				padding-right: 5px;
 
 			}
-			.a {
+			#content .a {
 				background-color: #ECEFF3;
 			}
-			tr:hover td {
-			background-color: #D9DCE0;
-/* 			background: transparent url(innershadow.png) repeat-x; */
+			#content tr:hover td {			
+			background-color: #EAEAEA;
 			cursor: pointer;
+			}
+			#content tr:hover td.a {
+			background-color: #DEE1E5;
 			}
 	.teamText {
 		margin:0 auto;
@@ -324,30 +354,51 @@ text-shadow: 0 1px 0 #fff;
 	.logoAndText {
 	margin: 0 auto;
 	max-width:124px;
+	position: relative;
 	}
 	.team_col {
 	width: 16.25%;
 	text-align: left;
 	}
 	.name_col {
-	width: 16.25%;
+	width: 16%;
 	}
-	td.result_col {
-	width: 8.55%;
+	.result_col {
+	width: 8.25%;
 	}
-	td.opponent_col {
+	.opponent_col {
 	width: 16.25%;
 	text-align: left;
 	}
-	td.week {
+	.week {
 	width: 8%;
 	}
-	td.yds_col,td.long_col,td.att_col,td.comp_col,td.avg_col,td.td_col,td.int_col,td.sacks_col,td.numb_stat {
-	width: 4.25%;
+	.yds_col, .long_col, .att_col, .comp_col, .avg_col, .td_col, .int_col, .sacks_col, .numb_stat {
+		width: 5%;
 	}
-	td.yds_col {
-	width: 4.5%;
+	.winLossHolder {
+	background-color: #D7DADE;
+	padding: 2px 2px 0 2px;
+	margin-right: 2px;
+	border:1px solid #A2A5D9;
+	-moz-border-radius: 3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
 	}
+		.winLossHolder.win {
+		border:1px solid #6AD900;	
+		}
+		.winLossHolder.loss {
+		border:1px solid #D9271C;	
+		padding-left:0.3em;
+		padding-right:0.3em;
+		}
+		.winLossHolder.tie {
+		border:1px solid #F9A73C;	
+		padding-left:0.3em;
+		padding-right:0.3em;
+		}
+
 	.newPageContainer {
 	height:50px;
 	position:relative;
@@ -465,9 +516,17 @@ text-shadow: 0 1px 0 #fff;
 	-moz-border-radius: 3px;
 	z-index: 101;
 	margin-left:1px;
+	-moz-box-shadow:0px 12px 15px #555555;
+	-webkit-box-shadow:0px 12px 15px #555555;
+	box-shadow:0px 12px 15px #555555;
+	
 }
 	#bossAttributes .dropdown_holder {
 	margin-top: 5px;
+	}
+	#controlBar .dropdown_holder {
+		margin: 0px 0px 0px 2px;
+		width:149px;
 	}
 
 ._dropdown {
@@ -488,6 +547,14 @@ text-shadow: 0 1px 0 #fff;
 		background-color: #ccc;
 		cursor: pointer;
 		text-shadow: 0 1px 0 #ddd;
+	}
+	#controlBar ._dropdown {
+		background-color: #fff;
+		padding:5px 0px 5px 0;		
+		text-align: center;
+	}
+	#controlBar ._dropdown:hover {
+		background-color: #eee;
 	}
 .cancel {
 	width: 20px;
@@ -534,12 +601,16 @@ text-shadow: 0 1px 0 #fff;
 	}
 .sliderContainer {
 	margin: 25px auto;
-	width:230px;
+	width:220px;
 	
 	position: relative;
 }
+	#juniorAttributes .sliderContainer {
+		margin-top: 15px;
+	}
+
 	#bossAttributes .sliderContainer{
-		margin-bottom: 45px;
+		padding-bottom: 5px;
 	}
 	.sliderFrom {
 	margin:8px 0px 0px 0px;
@@ -558,19 +629,26 @@ text-shadow: 0 1px 0 #fff;
 	font-weight:bold;
 	color:#333;
 	}
-	.sliderContainer .ui-widget-header {
-	background:#555;
-	}
+/*======Overriding jqueryui css=====*/
 .ui-slider {
-	width:228px;
+	width:219px;
 	margin-left: 2px;
-	border:0px solid #D79426;
+/* 	border:0px solid #D79426; */
 }
 .ui-slider-handle {
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	height:1.1em !important;
-	width:1.1em !important;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	height:1.15em !important;
+	width:0.96em !important;
+	top:-0.4em;
+}
+.ui-slider-horizontal {
+	height:0.6em;
+	border: 1px solid #555;
+}
+.sliderContainer .ui-widget-header {
+	background:#555;
 }
 /*--------------------END SLIDER STYLES />-----------------------*/
 
@@ -598,10 +676,10 @@ text-shadow: 0 1px 0 #fff;
 	}
 
 /* small sprites */
+.sm-sprite-blank {background-position:0px -80px; width: 25px; height: 25px; margin-left: 3px;}
 .sm-sprite-ari {background-position: 0px   -0px; width: 25px; height: 25px;}
 .sm-sprite-atl {background-position: 0px  -28px; width: 25px; height: 25px;}
 .sm-sprite-bal {background-position: 0px  -54px; width: 25px; height: 25px;}
-.sm-sprite-blank {background-position:0 -80px;height:25px;margin-left:3px;width:25px;}
 .sm-sprite-buf {background-position: 0px -105px; width: 25px; height: 25px;}
 .sm-sprite-car {background-position: 0px -135px; width: 25px; height: 25px;}
 .sm-sprite-chi {background-position: 0px -165px; width: 25px; height: 25px;}
@@ -666,11 +744,16 @@ text-shadow: 0 1px 0 #fff;
 
 /* ----------------Column sorting-----------------*/
 .selectedColumn {
-	background-color:#BDC0CD;
+	background-color:#BABDCA !important;
 }
 
 .selectedColumn .colArrow {
 	display: inline;
-	font-size:.8em;
+	font-size:.9em;
 	color:#333;
+	float: right;
+	position: relative;
+}
+.cl {
+clear: both;
 }

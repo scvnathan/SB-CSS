@@ -1,0 +1,16 @@
+html {
+	overflow:auto;
+}
+#contentInner {
+overflow-y: auto;
+overflow-x: hidden;
+}
+/*
+For fixed headers
+#content {
+top:139px
+}
+#resultTable {
+top:-23px;
+}
+*/
