@@ -123,6 +123,7 @@ a.statTab-selected:hover {
 font-size: 1.7em;
 color: #333;
 font-weight: bold;
+position: relative;
 height: 60px;
 -moz-border-radius-topleft: 4px;
 -moz-border-radius-topright: 4px;
@@ -165,7 +166,7 @@ z-index: 10;
 	width: 62px;
 	height: 25px;
 	float: right;
-	right:45px;
+	right:200px;
 	position: absolute;
 	top:20px;
 	}
