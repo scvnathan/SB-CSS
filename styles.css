@@ -100,13 +100,6 @@ body {
 	font-size: 60%;
 	font-family: Helvetica,Arial,sans-serif;
 }
-.contact {
-	font-size: 1.5em;
-	position: absolute;
-	right: 20px;
-	top: 15px;
-	color:#88888D;
-}
 #header {
 	color:#FFFFFF;
 	display:block;
@@ -286,7 +279,7 @@ text-shadow: 0 1px 0 #fff;
 	#sidebar h3 {
 		font-size: 1.3em;
 		color: #333;
-		padding-bottom: 5px;
+		padding-bottom: 15px;
 	}
 	.inputGroup {
 	width:220px;
@@ -674,7 +667,7 @@ text-shadow: 0 1px 0 #fff;
 	position: relative;
 }
 	#juniorAttributes .sliderContainer {
-		margin-top: 15px;
+		margin-top: 5px;
 	}
 
 	#bossAttributes .sliderContainer{
