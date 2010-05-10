@@ -335,6 +335,7 @@ text-shadow: 0 1px 0 #fff;
 			position:absolute;
 			min-width: 1060px;
 			width: 100%;
+			z-index: 10;
 			background-color: #D9DCE0;
 			}
 			#resultTableHeaders {
@@ -442,13 +443,13 @@ text-shadow: 0 1px 0 #fff;
 	.result_col {
 	width: 8.55%;
 	}
-	.opponent_col,oppo_col {
+	.opponent_col, .oppo_col {
 	width: 16%;
 	}
 	.week_col {
 	width: 9.8%;
 	}
-	.yds_col, .long_col, .att_col, .comp_col, .avg_col, .td_col, .int_col, .sacks_col, .numb_stat {
+	.yds_col, .long_col, .att_col, .comp_col, .avg_col, .td_col, .int_col, .sacks_col, .sck_col, .numb_stat {
 		width: 4.8%;
 	}
 	.winLossHolder {
@@ -496,6 +497,7 @@ text-shadow: 0 1px 0 #fff;
 	#loadingPageIndicator {
 	width: 16px;
 	position: relative;
+	top:-4px;
 	right: -15px;
 	height: 16px;
 	background: url("../images/progress-white.gif") no-repeat;
