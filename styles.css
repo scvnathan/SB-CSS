@@ -322,7 +322,15 @@ text-shadow: 0 1px 0 #fff;
 	z-index:5;
 	top:136px;
 	}
-	
+	#resultTable,#resultTableHeaders {
+	font-size: 1.2em;
+	border-left:261px solid #FAFAFA !important;
+	min-width:1060px;
+	width: 100%;
+	text-shadow: 0 1px 0 #e1e1e1;
+	text-align: center;	
+	}
+
 		#tableHeaders {
 		width:100%;
 		min-width: 1060px;
@@ -337,12 +345,8 @@ text-shadow: 0 1px 0 #fff;
 			z-index: 10;
 			background-color: #D9DCE0;
 			}
-			#resultTableHeaders {
-			width: 100%;
-			font-size: 1.2em;
-			background-color: #D9DCE0;
-			border-left:261px solid #fff;
-			min-width:1060px;
+			#resultTableHeaders {			
+			background-color: #D9DCE0;			
 			}
 				.scrollBarCover {
 				border-right: 15px solid #D9DCE0;
@@ -370,13 +374,6 @@ text-shadow: 0 1px 0 #fff;
 
 		#tableHeaders {
 		min-width: 1060px !important;
-		}
-		#content table {
-		font-size: 1.2em
-		border-left:261px solid #FAFAFA;
-		width: 100%;
-		text-shadow: 0 1px 0 #fff;
-		text-align: center;
 		}
 		th {
 		font-weight: bold;
@@ -441,7 +438,6 @@ text-shadow: 0 1px 0 #fff;
 	.result_col {width: 8.55%;}
 	.opponent_col, .oppo_col {width: 16%;}
 	.week_col,.week {width: 9.8%;}
-	.year_col {width: 4%;}
 	.numb_stat {width: 4.8%;}
 	.pct_stat {width: 2.9%;}
 	
