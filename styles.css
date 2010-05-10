@@ -61,6 +61,7 @@ background-color: #444;
 -webkit-border-bottom-left-radius: 2px;
 -moz-border-radius-bottomright: 2px;
 -webkit-border-bottom-right-radius: 2px;
+color: #999;
 
 }
 	#user_nav span {
@@ -76,7 +77,7 @@ background-color: #444;
 		border-left: 0;
 	}
 	#user_nav span a{
-		color: #aaa;
+		color: #eee;
 	}
 	#user_nav span a:hover{
 		color: #2592CA;
@@ -109,7 +110,7 @@ body {
 	width:100%;
 	z-index:5;
 	background-color: #2d2d2d;
-	min-width: 1024px;
+	min-width: 1060px;
 }
 #header .logo {
 	letter-spacing:-0.04em;
@@ -195,8 +196,8 @@ background-color: #ccc;
 text-shadow: 0 1px 0 #fff;
 background: #BFBFBF url(../images/controlBar.png) repeat-x;
 border-bottom:1px solid #888;
-min-width: 1024px;
-z-index: 10;
+min-width: 1060px;
+z-index: 20;
 }
 	.madlib {
 		left:5px; /* must be same as #controlBar .dropdown's left */
@@ -212,23 +213,22 @@ z-index: 10;
 		width: 32px;
 		height: 32px;
 		position: relative;
-		right: 25px;
-		top:17px;
+		right: 101px;
+		top:15px;
 		display: none;
 		float: right;
 	}
 	#result_info {
 		float: right;
-		top:27px;
-		right: 20px;
+		top:25px;
+		right: 85px;
 		position: relative;
 	}
 	#csvButton {
 	background: url(../images/csvButtons.png) no-repeat;
 	width: 62px;
 	height: 25px;
-	float: right;
-	right:200px;
+	right:15px;
 	position: absolute;
 	top:20px;
 	}
@@ -252,7 +252,7 @@ bottom:0;
 overflow-x:hidden;
 overflow-y:auto;
 width:260px;
-z-index:4;
+z-index:15;
 text-shadow: 0 1px 0 #fff;
 }
 	#sidebarInner {
@@ -289,7 +289,7 @@ text-shadow: 0 1px 0 #fff;
 	width:220px;
 	margin: 0 auto;
 	position: relative;
-	top:-5px;
+	top:-2px;
 	}
 		.box {
 			margin-right:5px;
@@ -303,6 +303,7 @@ text-shadow: 0 1px 0 #fff;
 		font-size: 1.3em;
 		text-shadow: 0 1px 0 #eee;
 		}
+		
 		.dropdownLabel {
 		padding-left: 15px;
 		padding-top: 10px;
@@ -314,39 +315,44 @@ text-shadow: 0 1px 0 #fff;
 	#content {
 	background-color:#fafafa;
 	bottom:0;
-	min-width:1024px !important; /* subtract width of sidebar from this for real width*/
+	min-width:1060px !important; /* subtract width of sidebar from this for real width*/
 	overflow:auto;
+	overflow-x: hidden;
 	width: 100%;
-	z-index:4;
+	z-index:5;
+	top:136px;
 	}
 	
 		#tableHeaders {
 		width:100%;
-		min-width: 1024px;
+		min-width: 1060px;
 		background-color: #D9DCE0;
 		height: 20px;
+		font-size: 1.2em;
+		z-index: 10;
 		}
 			#tableHeadersInner {
 			position:absolute;
-			min-width: 1024px;
+			min-width: 1060px;
 			width: 100%;
 			background-color: #D9DCE0;
 			}
 			#resultTableHeaders {
 			width: 100%;
 			background-color: #D9DCE0;
-			border-left:261px solid #333;
+			border-left:261px solid #fff;
 			min-width:1060px;
 			}
 				.scrollBarCover {
 				border-right: 15px solid #D9DCE0;
 				}
 				#resultTableHeaders th {
+				text-align: center;
 				overflow: hidden;
 				border-bottom: 1px solid #aaa;
-				font-size: 1.2em;
+				border-right:1px solid #aaa;
 				height: 20px;
-				padding: 0 1px;
+				padding: 0px 1px;
 				} 	
 
 		#contentInner,#headers {
@@ -356,11 +362,11 @@ text-shadow: 0 1px 0 #fff;
 		width:100%;
 		}
 		#contentInner {
-		min-width: 1024px;
+		min-width: 1060px;
 		}
 
 		#tableHeaders {
-		min-width: 1024px !important;
+		min-width: 1060px !important;
 		}
 		#content table {
 		font-size: 1.2em;
@@ -424,28 +430,26 @@ text-shadow: 0 1px 0 #fff;
 	
 	.logoAndText {
 	margin: 0 auto;
-	max-width:124px;
+	max-width:121px;
 	position: relative;
 	}
 	.team_col {
-	width: 16.25%;
-	text-align: left;
+	width: 16%;
 	}
 	.name_col {
 	width: 16%;
 	}
 	.result_col {
-	width: 8.25%;
+	width: 8.55%;
 	}
-	.opponent_col {
-	width: 16.25%;
-	text-align: left;
+	.opponent_col,oppo_col {
+	width: 16%;
 	}
-	.week {
-	width: 8%;
+	.week_col {
+	width: 9.8%;
 	}
 	.yds_col, .long_col, .att_col, .comp_col, .avg_col, .td_col, .int_col, .sacks_col, .numb_stat {
-		width: 5%;
+		width: 4.8%;
 	}
 	.winLossHolder {
 	background-color: #D7DADE;
@@ -668,7 +672,7 @@ text-shadow: 0 1px 0 #fff;
 		float: none;
 	}
 .sliderContainer {
-	margin: 25px auto;
+	margin: 20px auto;
 	width:220px;
 	
 	position: relative;
@@ -678,7 +682,8 @@ text-shadow: 0 1px 0 #fff;
 	}
 
 	#bossAttributes .sliderContainer{
-		padding-bottom: 15px;
+		padding-bottom: 10px;
+		margin-top: 16px;
 	}
 	.sliderLabel {
 	float:left;
