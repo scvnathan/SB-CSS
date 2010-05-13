@@ -1,0 +1,65 @@
+form a {
+	color: #2592C3;
+	text-shadow: 0 1px 0 #ccc;
+}
+body {
+background-color: #f0f0f0;
+}
+form {
+font-size: 1.4em;
+width: 280px;
+margin: 25px auto;
+}
+form input {display: block;}
+form input[type='text'],form input[type='password'] {
+width:230px;
+padding:4px;
+border: 3px solid #ccc;
+margin-bottom: 20px;
+font-size: 1.1em;
+color: #333;
+margin: 3px auto;
+}
+form input[type='submit'] {
+	margin: 10px 0px 5px 20px;
+}
+form a {
+	margin-left: 20px;
+	line-height: 1.3em;
+}
+label {
+font-weight: bold;
+color: #444;
+margin: 0px auto;
+display: block;
+padding-left: 4px;
+}
+#controlBar h2 {
+ padding-top: 18px;
+ padding-left: 15px;
+ color: #eee;
+ font-weight: normal;
+}
+.inputBG {
+width: 250px;
+position: relative;
+margin: 0 auto;
+padding: 15px 10px 10px 10px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius:3px;
+}
+	.inputBG.active {
+	background-color: #444;	
+	}
+	#user_signin .inputBG.active input[type='text'], #user_signin .inputBG.active input[type='password'] {
+	border:3px solid #F4A33F;
+	}
+	#user_new .inputBG.active input[type='text'],#user_new .inputBG.active input[type='password'] {
+	border:3px solid #45B2EA;
+	}
+	
+	.inputBG.active label {
+	
+	color: #eee;
+	}
