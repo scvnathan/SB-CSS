@@ -117,7 +117,6 @@ body {
 	min-width:1060px;
 }
 #header .logo {
-	letter-spacing:-0.04em;
 	font-weight:bold;
 	color:#699dC9;
 	top:3px;
@@ -125,7 +124,6 @@ body {
 	position: relative;
 	width: 149px;
 	height:48px;
-	font-size:3.2em;
 	display: block;
 	text-indent: -999999px;
 	background: url(../images/sb_logo.png) no-repeat;
