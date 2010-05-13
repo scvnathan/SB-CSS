@@ -91,13 +91,11 @@ background-color: #414141;
 a {
 	text-decoration:none;
 }
-/*a:link {
-	color: #BB3518;
-	border-bottom: 1px dotted #BB3518;
+/*
+Maybe define later
+a:link {
 }
 a:visited {
-	color:#607F06;
-	border-bottom: 1px dotted #607F06;
 }*/
 #desc {
 	display: none;
@@ -128,6 +126,7 @@ body {
 	width: 149px;
 	height:48px;
 	font-size:3.2em;
+	display: block;
 	text-indent: -999999px;
 	background: url(../images/sb_logo.png) no-repeat;
 }
@@ -292,7 +291,7 @@ text-shadow: 0 1px 0 #fff;
 		.box {
 			margin-right:5px;
 			padding-top:5px;
-			margin-bottom:6px;
+			margin-bottom:1px;
 			width: 15px;
 			height: 15px;
 		
