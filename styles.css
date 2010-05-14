@@ -784,7 +784,7 @@ text-shadow: 0 1px 0 #fff;
 clear: both;
 }
 /* ----------------BLAZE NOTIFICATION STYLES-----------------*/
-body + #blaze {
+body > #blaze {
 height: 20px;
 -moz-border-radius: 2px;
 -webkit-border-radius:2px;
@@ -798,27 +798,27 @@ margin-left:-250px;
 width: 510px;
 color: #333;
 }
-	body + #blaze:hover {
+	body > #blaze:hover {
 		cursor: pointer;
 	}
-	body + #blaze div:first-child {
+	body > #blaze div:first-child {
 		font-weight: bold;
 		padding: 5px;
 		font-size: 1.3em;
 		position: relative;
 	}
 /* 	green */
-	body + #blaze.notice {
+	body > #blaze.notice {
 	background-color: #BFF5A0;
 	border: 3px solid #7FC55F;	
 	}
 /* 	orange */
-	body + #blaze.alert {
+	body > #blaze.alert {
 	background-color: #FfA53F;	
 	border: 3px solid #Df851F;
 	}
 /* 	red */
-	body + #blaze.error {
+	body > #blaze.error {
 	background-color: #Ff553f;	
 	border:3px solid #Df351f;
 	}
@@ -829,7 +829,7 @@ color: #333;
 		color: #333;
 		position: relative;
 	}
-	body + #blaze div.closeNotice {
+	body > #blaze div.closeNotice {
 	background-color:#FF754A;
 	border:2px solid #333333;
 	color:#333333;
@@ -842,11 +842,11 @@ color: #333;
 -webkit-border-radius:10px;
 border-radius:10px;
 	}
-	body + #blaze.notice div.closeNotice {background-color: #8Fd55F;}
-	body + #blaze.alert div.closeNotice {background-color: #Df851F;}
-	body + #blaze.error div.closeNotice {background-color: #Df351f;}
+	body > #blaze.notice div.closeNotice {background-color: #8Fd55F;}
+	body > #blaze.alert div.closeNotice {background-color: #Df851F;}
+	body > #blaze.error div.closeNotice {background-color: #Df351f;}
 
-	body + #blaze div.closeNotice:hover {
+	body > #blaze div.closeNotice:hover {
 		cursor: pointer;
 	}
 /* ----------------END BLAZE NOTIFICATION STYLES />-----------------*/
