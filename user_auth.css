@@ -70,3 +70,51 @@ border-radius:3px;
 	
 	color: #eee;
 	}
+#blaze {
+	max-width: 280px;
+	font-weight: bold;
+	color: #222;
+	min-height: 10px;
+	background-color:#F5553A;
+	border: 3px solid #D5251A;
+	padding: 15px 10px;
+	text-shadow: 0 1px 0 #FF754A;
+	margin:10px auto;		
+}	
+	#blaze.error {
+		
+	}
+	#blaze #close {
+	border:2px solid #333333;
+	float:right;
+	color: #333;
+	line-height:0.9em;
+	padding:0 3px;
+	position: relative;
+	top:-2px;
+	background-color: #FF754A;
+	}
+		#blaze #close:hover {
+			cursor: pointer;
+		}
+#error_explanation {
+	max-width: 335px;
+	font-weight: bold;
+	color: #252525;
+	min-height: 10px;
+	background-color:#F5B5BA;
+	border: 3px solid #F5354A;
+	padding: 12px 8px;
+	margin:10px auto;		
+}
+	#error_explanation h2 {
+		font-size: 1.1em;
+	}
+	#error_explanation ul {
+	font-weight: normal;
+	padding-left: 5px;
+	list-style-type: none;
+	}
+	#error_explanation ul li {
+	padding-top: 5px;
+	}
